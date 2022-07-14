@@ -1,0 +1,27 @@
+-- Base de datos
+-- -----------------------------------------------------
+CREATE SCHEMA IF NOT EXISTS wishlist ;
+USE wishlist ;
+-- -----------------------------------------------------
+-- Tabla de usuarios
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS users (
+id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+name VARCHAR(45) NOT NULL UNIQUE,
+password VARCHAR(64) NOT NULL,
+email VARCHAR(255) NOT NULL UNIQUE,
+hora TIMESTAMP DEFAULT CURRENT_TIMESTAMP;
+-- -----------------------------------------------------
+-- Tabla de objetos del listado
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS items (
+id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+name VARCHAR(255) NOT NULL,
+link VARCHAR(255) NULL,
+hora TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL,
+description TEXT NULL,
+user_id INT NOT NULL,
+FOREIGN KEY (user_id)
+REFERENCES users(id)
+ON DELETE CASCADE
+ON UPDATE CASCADE);

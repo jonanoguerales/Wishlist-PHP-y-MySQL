@@ -1,0 +1,63 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 50px auto;
+    width: 0 auto;
+}
+li{
+    text-align: center;
+    display:inline;
+    padding: 10px;
+}
+.a {
+    text-align: right;
+}
+a:link, a:visited, a:active {
+    text-decoration:none;
+}
+h1{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+#crear{
+    text-align: left;
+}
+label{
+    width: 150px;
+    font-size: 20px;
+    font-family: 'Arial';
+    display:inline;
+
+}
+input {
+    border: 2px solid black;
+    font-size: 20px;
+    width: 60½;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    margin: 2%;
+
+}
+.contenedor {
+    margin: 25px auto;
+    padding: 20px;
+    border: 5px solid #ccc;
+    width: 500px;
+    background: aquamarine;
+
+}
+button {
+    padding: 10px;
+    font-size: 1.5rem;
+    font-family: 'Lato';
+    font-weight: 100;
+    background: yellowgreen;
+    color: white;
+    border: none;
+    clear: right;
+    border-radius: 15px;
+}
